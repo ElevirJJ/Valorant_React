@@ -1,0 +1,66 @@
+.assunto{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 30%;
+    margin-left: 10%;
+
+    .conteudo{
+        h1{
+            color: aliceblue;
+            font-size: 50px;
+            animation: animar 0.5s ease-in-out;
+        }
+    }
+
+    .description{
+        p{
+            color: rgb(222, 229, 235);
+            width: 40%;
+            margin-top: 2%;
+            animation: animar 1s ease-in-out;
+        }
+    }
+}
+
+.quadros{
+    img{
+        background-size: cover;
+        height: 100vh;
+        width: 130vw;
+    }
+}
+
+.btn{
+    position: absolute;
+    top: 70%;
+    left: 70%;   
+
+    .lef{
+        margin-right: 30px;
+        background-color: transparent;
+        border: none;
+        font-size: 30px;
+        cursor: pointer;
+
+    }
+
+    .direita{
+        background-color: transparent;
+        border: none;
+        font-size: 30px;
+        cursor: pointer;
+    }
+}
+
+
+@keyframes animar {
+    from{
+        opacity: 0;
+        filter: blur(33px);
+    }
+    to{
+        opacity: 1;
+        filter: 0;
+    }
+}
